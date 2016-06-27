@@ -1,0 +1,20 @@
+{
+    "name": "def/cache",
+    "keywords": ["cache"],
+    "type": "library",
+    "homepage": "https://github.com/andrew-kamenchuk/def-cache",
+    "description": "cache adapters",
+    "require": {
+        "php": ">=5.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "andrew-kamenchuk",
+            "email": "andrew.kamenchuk@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {"def\\Cache\\":""}
+    }
+}
