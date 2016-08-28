@@ -47,14 +47,14 @@ interface CacheInterface
     /**
      * @param string $id
      * @param int $offset
-     * @return boolean
+     * @return int|boolean
      */
     public function increment($id, $offset = 1);
 
     /**
      * @param string $id
      * @param int $offset
-     * @return boolean
+     * @return int|boolean
      */
     public function decrement($id, $offset = 1);
 

@@ -66,12 +66,20 @@ class Memcached implements CacheInterface
 
     public function increment($id, $offset = 1)
     {
-        return $this->enabled && false !== $this->memcached->increment($this->id($id), $offset);
+        if ($this->enabled) {
+            return $this->memcached->increment($this->id($id), $offset);
+        }
+
+        return false;
     }
 
     public function decrement($id, $offset = 1)
     {
-        return $this->enabled && false !== $this->memcached->decrement($this->id($id), $offset);
+        if ($this->enabled) {
+            return $this->memcached->decrement($this->id($id), $offset);
+        }
+
+        return false;
     }
 
     public function get($id)

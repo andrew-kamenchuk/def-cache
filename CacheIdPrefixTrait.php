@@ -1,5 +1,4 @@
 <?php
-
 namespace def\Cache;
 
 trait CacheIdPrefixTrait
@@ -11,7 +10,7 @@ trait CacheIdPrefixTrait
      */
     public function prefix($prefix = null)
     {
-        return \func_num_args() ? $this->prefix = $prefix : $this->prefix;
+        return func_num_args() ? $this->prefix = $prefix : $this->prefix;
     }
 
     public function id($id)
